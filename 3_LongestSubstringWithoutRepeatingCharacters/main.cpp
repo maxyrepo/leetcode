@@ -1,16 +1,13 @@
 #include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        int char_idx[256];
-        for(size_t i = 0; i < 256; ++i) {
-            char_idx[i] = -1;
-        }
-    
+        vector<int> char_idx(256, -1);
         int cur_max_len = 0;
         int global_max_len = 0;
         for(size_t i = 0; i < s.size(); ++i) {
