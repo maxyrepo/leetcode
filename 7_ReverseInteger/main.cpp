@@ -6,7 +6,6 @@ class Solution {
 public:
     long long reverse_ab(long long x) {
         long long res = 0;
-        long long max_exp = 1;
         while (x > 0) {
             res = res * 10 + x % 10;
             x /= 10;
