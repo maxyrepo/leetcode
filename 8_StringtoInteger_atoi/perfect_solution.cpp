@@ -1,3 +1,6 @@
+//This code handle -2147483648 as overflow, but it is not.
+
+
 #include <iostream>
 #include <string>
 #include <climits>
